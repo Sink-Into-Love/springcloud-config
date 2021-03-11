@@ -1,21 +1,2 @@
-server:
-  port: 3344
-
-spring:
-  application:
-    #    微服务注册名称
-    name: cloud-gateway
-
-  cloud:
-    config:
-      server:
-        git:
-          uri: git@github.com:Sink-Into-Love/springcloud-config.git
-          search-paths:
-            - springcloud-config
-          default-label: main
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:7001/eureka/, http://localhost:7002/eureka/
+config:
+  info: "master branch, springcloud-config/application-test.yml version=1"
